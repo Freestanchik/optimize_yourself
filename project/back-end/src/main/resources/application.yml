@@ -1,0 +1,74 @@
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+
+spring:
+  datasource:
+    password: 1111
+    url: jdbc:postgresql://localhost:5432/optimize_yourself
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+
+  mail:
+    host: localhost
+    port: 1025
+    username: hello
+    password: hello
+
+    properties:
+      mail:
+        smtp:
+          ssl:
+            trust: "*"
+          auth: true
+          starttls:
+            enable: true
+          connectiontimeout: 5000
+          timeout: 3000
+          writetimeout: 5000
+
+
+#server:
+#  error:
+#    include-message: always
+#    include-binding-errors: always
+#
+#spring:
+#  datasource:
+#    password: 10568cf9cb87c479c9c114db5f24c6f53868329e937b481d9ce369e44dce2bf7
+#    url: postgres://efrljzmuajpivr:10568cf9cb87c479c9c114db5f24c6f53868329e937b481d9ce369e44dce2bf7@ec2-54-174-172-218.compute-1.amazonaws.com:5432/d24dengsimr9kp
+#    username: efrljzmuajpivr
+#  jpa:
+#    hibernate:
+#      ddl-auto: create-drop
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.PostgreSQLDialect
+#        format_sql: true
+#    show-sql: true
+#
+#  mail:
+#    host: https://optimize-yourself.herokuapp.com/
+#    port: 1025
+#    username: hello
+#    password: hello
+#
+#    properties:
+#      mail:
+#        smtp:
+#          ssl:
+#            trust: "*"
+#          auth: true
+#          starttls:
+#            enable: true
+#          connectiontimeout: 5000
+#          timeout: 3000
+#          writetimeout: 5000
