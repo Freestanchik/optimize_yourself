@@ -1,0 +1,37 @@
+.add-post-form {
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+
+  label {
+    display: block;
+  }
+
+  textarea {
+    resize: none;
+    width: 97%;
+  }
+
+  button {
+    align-self: center;
+    margin: 5px;
+    background: none;
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    background: #2eff49;
+  }
+}
+
+.weatherCheck__block {
+  display: flex;
+  align-items: center;
+
+  input {
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+  }
+}

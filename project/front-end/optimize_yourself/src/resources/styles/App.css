@@ -1,0 +1,23 @@
+html, body {
+    height: 100%;
+    font-size: 20px;
+}
+
+.App {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.add-post-form__error {
+    color: red;
+}
+
+.content-container {
+    min-height: calc(100vh - 210px);
+}
+
+input{
+    width: 97%;
+}

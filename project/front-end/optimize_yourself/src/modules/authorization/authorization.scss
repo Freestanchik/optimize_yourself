@@ -1,0 +1,41 @@
+.authorization-form{
+  display: flex;
+  justify-items: center;
+
+  h2{
+    text-align: center;
+  }
+  label{
+    display: block;
+  }
+  input{
+    font-size: 20px;
+    width: 97%;
+  }
+  .container {
+    margin: 0 auto;
+    padding: 10px;
+  }
+  &__success{
+    color: limegreen;
+    font-weight: bold;
+    text-align: center;
+  }
+  &__error{
+    color: red;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+.error{
+  color: red;
+}
+.submit{
+  display: block;
+  margin: 5px auto;
+  width: 50%;
+}
+.authorization__nav{
+  display: block;
+  text-align: end;
+}
